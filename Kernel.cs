@@ -12,8 +12,6 @@ namespace CosmosKernel1
 
         protected override void BeforeRun()
         {
-            #region Debug
-            /*
             CosmosVFS cosmosVFS = new CosmosVFS();
             VFSManager.RegisterVFS(cosmosVFS);
 
@@ -46,18 +44,6 @@ namespace CosmosKernel1
             graphics2.Flush(500, 350, vMWareSVGAII.width, vMWareSVGAII.height, vMWareSVGAII.Video_Memory);
 
             vMWareSVGAII.Update(0, 0, vMWareSVGAII.width, vMWareSVGAII.height);
-            */
-            #endregion
-
-            CosmosVFS cosmosVFS = new CosmosVFS();
-            VFSManager.RegisterVFS(cosmosVFS);
-
-            VMWareSVGAII vMWareSVGAII = new VMWareSVGAII();
-            vMWareSVGAII.Disable();
-            Console.WriteLine($"Video RAM: {vMWareSVGAII.Video_Memory}");
-
-            FileInfo fileInfo = new FileInfo(@"0:\1.bmp");
-            Console.WriteLine(fileInfo.fi)
         }
 
         protected override void Run()
