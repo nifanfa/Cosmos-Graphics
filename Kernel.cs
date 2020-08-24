@@ -40,7 +40,7 @@ namespace CosmosKernel1
 
             Graphics graphics2 = new Graphics(300, 100);
             graphics2.CopyFromGraphics(graphics, 15, 380);
-            graphics2.Blur(1);
+            graphics2.Blur(5);
             graphics2.Flush(500, 350, vMWareSVGAII.width, vMWareSVGAII.height, vMWareSVGAII.Video_Memory);
 
             vMWareSVGAII.Update(0, 0, vMWareSVGAII.width, vMWareSVGAII.height);
