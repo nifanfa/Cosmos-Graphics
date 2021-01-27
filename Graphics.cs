@@ -67,6 +67,7 @@ namespace CosmosKernel1
                 for (int w = 0; w < image.Width; w++)
                 {
                     //可能会导致错误，65536>>8 = 256，比255多1。
+                    //No Colorspace
 
                     Color foreground = Color.FromArgb(image.rawData[image.Width * h + w]);
                     Color background = Color.FromArgb(GetPixel(x + w, y + h));
